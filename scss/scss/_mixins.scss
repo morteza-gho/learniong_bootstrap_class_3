@@ -1,0 +1,21 @@
+@mixin borderRadius($val: $br_radius) {
+	border-radius: $val;
+	-webkit-border-radius: $val;
+	-moz-border-radius: $val;
+	-o-border-radius: $val;
+}
+
+@mixin ellipsisText {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@mixin hover {
+	&[disabled] {
+		cursor: not-allowed;
+	}
+	&:not([disabled]):hover {
+		@content;
+	}
+}

@@ -1,0 +1,39 @@
+extends partials/_layout
+block main
+   - var name = 'Ali';
+   - var welcomeTxt = 'Bro :)';
+
+   mixin pet(name, count)
+      li.pet Name: #{name}, Count: #{count}
+
+
+   h1 home page
+   h2 hello world
+   div
+      | Hello &nbsp;
+      b= name
+      | &nbsp; Welcome #{welcomeTxt}
+
+   hr
+
+   ul
+      each val, index in ['zero', 'one', 'two']
+         //li= index + ': ' + val
+         li index: #{index} - value: #{val}
+
+   hr
+
+   ul
+      +pet('Donkey', 3)
+      +pet('Monkey', 5)
+      +pet('Fish', 6)
+      +pet('Cow', 10)
+
+
+
+
+block scripts
+   script(src="js/slider-plugin.js")
+   script.
+      console.log('hello');
+      console.log('this is home page');

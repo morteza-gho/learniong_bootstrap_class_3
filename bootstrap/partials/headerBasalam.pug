@@ -1,0 +1,39 @@
+header#main-header
+   nav.navbar.navbar-expand-lg.shadow-sm
+      .container
+         .row.w-100.align-items-center
+            .col-md-6.col-sm-12
+               .d-flex.align-items-center
+                  a.navbar-brand.m-0(href='#')
+                     img(src="./assets/images/logo.svg" style="width: 100px")
+                  form.w-100.position-relative
+                     input.form-control.me-2.form-control-lg(type='search' placeholder='جستجو...')
+                     i.bi.bi-search.position-absolute.start-0.top-0.fs-3.text-secondary.mt-1
+            .col-md-6.col-sm-12
+               div.d-flex.justify-content-end.mt-md-0.mt-3
+                  a(href="#").d-flex.flex-column.align-items-center.text-decoration-none.link-dark.ms-3
+                     i.bi.bi-person.fs-3.text-secondary
+                     span ورود/ثبت نام
+
+                  a(href="#").d-flex.flex-column.align-items-center.text-decoration-none.link-dark
+                     i.bi.bi-cart.fs-3.text-secondary
+                     span سبد خرید
+
+            .col-12
+               .position-relative
+                  button.navbar-toggler.position-absolute(type='button' data-bs-toggle='collapse' data-bs-target='#navbar' style="top: -45px")
+                     span.navbar-toggler-icon
+                  #navbar.collapse.navbar-collapse
+                     ul.navbar-nav.mb-2.mb-lg-0.p-0.d-flex.align-items-md-center
+                        li.nav-item.ms-3
+                           a.nav-link.fw-bold.link-dark.d-flex.align-items-center(href='#')
+                              i.bi.bi-list.link-dark.fs-4.d-md-inline-block.d-none
+                              | دسته بندی ها
+                        li.nav-item.ms-3
+                           a.nav-link.fw-bold.link-dark(href='#') نصب اپ
+                        li.nav-item.ms-3
+                           a.nav-link.fw-bold.link-dark غرفه دار شو
+
+
+         // .row
+

@@ -1,0 +1,121 @@
+extends partials/_layoutBasalam
+block main
+
+   section.page-section
+      .container
+         #main-carousel.carousel.slide.carousel-dark(data-bs-ride='carousel')
+            .carousel-indicators
+               button.active(type='button' data-bs-target='#main-carousel' data-bs-slide-to='0')
+               button(type='button' data-bs-target='#main-carousel' data-bs-slide-to='1')
+
+            .carousel-inner
+               .carousel-item.active(data-bs-interval="5000")
+                  img.d-block.w-100.rounded-3.img-fluid(src='./assets/images/slide1.webp' alt='...')
+
+               .carousel-item(data-bs-interval="5000")
+                  img.d-block.w-100.rounded-3.img-fluid(src='./assets/images/slide2.webp' alt='...')
+
+            button.carousel-control-prev(type='button' data-bs-target='#main-carousel' data-bs-slide='prev')
+               span.carousel-control-prev-icon
+            button.carousel-control-next(type='button' data-bs-target='#main-carousel' data-bs-slide='next')
+               span.carousel-control-next-icon
+
+
+   section.page-section.mt-md-5.mt-3
+      .container
+         .row
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon1.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 کتاب خوب
+
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon2.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 مبل راحتی
+
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon3.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 چشمک خدا
+
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon4.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 لوبیا سفیدآبی
+
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon5.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 جام شراب
+
+            .col-lg-2.col-md-4.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark
+                  .px-4
+                     img(src="./assets/images/icon6.png" alt="").img-fluid
+                  span.fw-bold.text-center.fs-6 دانلود پرسرعت
+
+
+   section.page-section.mt-md-5.mt-3
+      .container
+         a(href="#")
+            img(src="./assets/images/ads.webp").rounded-3.img-fluid
+
+   section.page-section.mt-md-5.mt-3
+      .container
+         .row
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img1.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img2.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img3.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img4.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img5.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img6.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img7.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img8.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img9.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست
+            .col-lg.col-md.col-sm-4.col-6
+               a(href="#").d-flex.flex-column.justify-content-center.text-decoration-none.link-dark.mb-lg-0.mb-sm-4.mb-4
+                  .bg-white.rounded-3.p-4.text-center.img-icon
+                     img(src="./assets/images/img10.svg" alt="").img-fluid.ratio-1x1
+                  span.text-center.fs-6.mt-2 متن اینجاست

@@ -1,0 +1,22 @@
+extends partials/_layout
+block main
+
+   .container
+      .dropdown
+         button.btn.btn-primary.dropdown-toggle(type='button' data-bs-toggle='dropdown' data-bs-auto-close='outside' data-bs-offset="10,20")
+            | Dropdown form
+         form.dropdown-menu.p-4
+            .mb-3
+               label.form-label(for='exampleDropdownFormEmail2') Email address
+               input#exampleDropdownFormEmail2.form-control(type='email' placeholder='email@example.com')
+            .mb-3
+               label.form-label(for='exampleDropdownFormPassword2') Password
+               input#exampleDropdownFormPassword2.form-control(type='password' placeholder='Password')
+            .mb-3
+               .form-check
+                  input#dropdownCheck2.form-check-input(type='checkbox')
+                  label.form-check-label(for='dropdownCheck2')
+                     | Remember me
+            button.btn.btn-primary(type='submit') Sign in
+
+

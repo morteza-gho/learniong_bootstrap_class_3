@@ -1,0 +1,13 @@
+#main-footer {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: $gap*4;
+	border-top: 2px solid darken($gray, 5%);
+	background: lighten($gray, 5%);
+
+	#footer-title {
+		margin: 0;
+	}
+}

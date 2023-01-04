@@ -1,0 +1,113 @@
+@import "custom-bootstrap";
+@import "variables";
+
+#main-header {
+	.navbar {
+		//height: $header_height;
+	}
+}
+#main {
+	//padding-top: calc(#{$header_height} + 20px);
+	padding-top: $header_height;
+
+	@include media-breakpoint-down(sm) {
+		padding-top: 30px;
+	}
+}
+#main-footer {
+	margin-top: 30px;
+}
+
+.box {
+	min-height: 200px;
+	margin-bottom: 12px;
+
+	&.red {
+		background: red;
+	}
+	&.blue {
+		background: blue;
+	}
+	&.green {
+		background: green;
+	}
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+
+	li {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+
+		&:before {
+			content: '\F26B';
+			font-family: 'bootstrap-icons';
+			margin-right: 5px;
+			color: $success;
+			//font-size: 18px;
+			@include rfs(20px);
+		}
+	}
+}
+
+// use below styles in breakpoints.html
+.box0 {
+	width: 100px;
+	height: 100px;
+	background: black;
+	display: block;
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+
+}
+
+.box1 {
+	width: 100px;
+	height: 100px;
+	background: red;
+	display: none;
+
+	@include media-breakpoint-up(sm) {
+		display: block;
+	}
+
+}
+
+.box2 {
+	width: 100px;
+	height: 100px;
+	background: blue;
+	display: block;
+
+	@include media-breakpoint-only(lg) {
+		display: none;
+	}
+
+}
+
+.box3 {
+	width: 100px;
+	height: 100px;
+	background: green;
+	display: none;
+
+	@include media-breakpoint-between(md, lg) {
+		display: block;
+	}
+}
+.img-icon {
+	height: 100px;
+
+	@include media-breakpoint-down(sm) {
+		height: auto;
+		aspect-ratio: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

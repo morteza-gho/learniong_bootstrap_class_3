@@ -1,0 +1,27 @@
+extends partials/_layout
+block main
+
+   .container
+      .row
+         .col-md-4.col-sm-6.col-12
+            .card
+               img.card-img-top(src='...' alt='...')
+               .card-body
+                  h5.card-title Card title
+                  p.card-text
+                     | Some quick example text to build on the card title and make up the bulk of the card's content.
+                  a.btn.btn-primary(href='#') Go somewhere
+
+         .col-md-4.col-sm-6.col-12
+            .card(aria-hidden='true')
+               img.card-img-top(src='...' alt='...')
+               .card-body
+                  h5.card-title.placeholder-glow
+                     span.placeholder.col-6
+                  p.card-text.placeholder-glow
+                     span.placeholder.col-7
+                     span.placeholder.col-4
+                     span.placeholder.col-4
+                     span.placeholder.col-6
+                     span.placeholder.col-8
+                  a.btn.btn-primary.disabled.placeholder.col-6(href='#' tabindex='-1')

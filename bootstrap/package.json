@@ -1,0 +1,15 @@
+{
+  "name": "learning-bootstrap",
+  "version": "1.0.0",
+  "description": "learning bootstrap in Barnameh nevis class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Morteza",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.2"
+  }
+}
